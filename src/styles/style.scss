@@ -1,0 +1,202 @@
+@import "fonts";
+@import "bootstrap";
+
+$header-font: "Georgia",
+serif;
+
+body {
+  color: #36424B;
+
+  font: {
+    family: "Source Sans Pro", sans-serif;
+    size: 18px;
+  }
+
+  line-height: 25px;
+  background: #fff;
+}
+
+.header-block {
+  padding: 33px 30px;
+  position: relative;
+  overflow: hidden;
+
+  .nav-item {
+    font: {
+      family: 'Open Sans', sans-serif;
+    }
+
+    .nav-link {
+      color: #36424B;
+      padding-right: .5rem;
+      padding-left: .5rem;
+      transition: .3s ease-in-out;
+      -webkit-transition: .3s ease-in-out;
+      -moz-transition: .3s ease-in-out;
+      -ms-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .navbar-nav {
+      flex-direction: row;
+    }
+  }
+
+  .search-field {
+    border: 1px solid #36424b;
+    outline: none;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    right: -240px;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+
+    &.active {
+      right: 50px;
+      opacity: 1;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .search-btn {
+    margin-left: 30px;
+  }
+}
+
+.background-container {
+  background: url(../images/070219-fitshop-general-desktop.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 16%;
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+  }
+
+  h1 {
+    font: {
+      family: $header-font;
+      size: 58px;
+      weight: 700;
+    }
+
+    line-height: 66px;
+    padding-top: 141px;
+  }
+
+  p {
+    font: {
+      weight: 600;
+      size: 34px;
+    }
+
+    line-height: 43px;
+    padding: 26px 0 181px;
+  }
+
+  h1,
+  p {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.our-mission-block h2,
+.our-principles-block h2 {
+  font: {
+    family: $header-font;
+    size: 48px;
+    weight: 700;
+  }
+
+  height: 55px;
+}
+
+.our-mission-block {
+  padding: 72px 10% 81px;
+
+  h2 {
+    margin-bottom: 29px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.our-principles-block {
+  padding-bottom: 42px;
+
+  h2 {
+    margin-bottom: 120px;
+  }
+
+  .card {
+    border: none;
+    transition: .4s ease-in;
+    -webkit-transition: .4s ease-in;
+    -moz-transition: .4s ease-in;
+    -ms-transition: .4s ease-in;
+    -o-transition: .4s ease-in;
+
+    &:hover {
+      transform: translateY(10px);
+      -webkit-transform: translateY(10px);
+      -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      -o-transform: translateY(10px);
+    }
+  }
+
+  .card-body {
+    padding: 1.25rem 0;
+  }
+
+  .card-img-top {
+    max-width: 140px;
+    width: auto;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .card-title {
+    font: {
+      family: $header-font;
+      size: 40px;
+      weight: 600;
+    }
+
+    line-height: 45px;
+    margin-bottom: 21px;
+  }
+
+  .card-text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
